@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="ProjectChildList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/ProjectChildList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x010000aa932af0d4457293f4db2de1bf231e" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{4c991849-4eff-45e4-b78d-97260725b670}" Name="Child_x005f_Field_x005f_Name" /><FieldRef ID="{91467d1b-7bea-4ccd-8ae2-51aed921656b}" Name="Test" /><FieldRef ID="{627524ec-4ab6-4952-8c63-ac559cd3b247}" Name="Value1" /><FieldRef ID="{d8020b17-2469-4b4f-b413-51b99e14c4fb}" Name="Condition" /><FieldRef ID="{9a05102d-6b4a-4975-8a8c-deaaeb6aa817}" Name="pid" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field Name="Child_x005f_Field_x005f_Name" ID="{4c991849-4eff-45e4-b78d-97260725b670}" DisplayName="Child_Field_Name" Type="Choice" Required="TRUE" ShowInListSettings="TRUE"><CHOICES><CHOICE>Project Name</CHOICE><CHOICE>Business</CHOICE><CHOICE>Status</CHOICE></CHOICES></Field><Field Name="Test" ID="{91467d1b-7bea-4ccd-8ae2-51aed921656b}" DisplayName="Test" Type="Choice" Required="TRUE" Format="Dropdown"><CHOICES><CHOICE>Equal To</CHOICE><CHOICE>Not Equal To</CHOICE></CHOICES></Field><Field Name="Value1" ID="{627524ec-4ab6-4952-8c63-ac559cd3b247}" DisplayName="Value" Type="Text" Required="TRUE" /><Field Name="Condition" ID="{d8020b17-2469-4b4f-b413-51b99e14c4fb}" DisplayName="Condition" Type="Choice" Format="Dropdown"><CHOICES><CHOICE>And</CHOICE><CHOICE>Or</CHOICE></CHOICES></Field><Field Name="pid" ID="{9a05102d-6b4a-4975-8a8c-deaaeb6aa817}" DisplayName="PID" Type="Lookup" Required="TRUE" List="Lists/ProjectParentList" ShowField="PID" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Child_x005f_Field_x005f_Name" /><FieldRef Name="Test" /><FieldRef Name="Value1" /><FieldRef Name="Condition" /><FieldRef Name="pid" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

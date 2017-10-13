@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="3ae94178-bc91-495b-9d63-54e56ccc8993" SharePointProductVersion="16.0">
+  <FeatureManifests>
+    <FeatureManifest Location="PDPplus Project Picker_Feature1\Feature.xml" />
+    <FeatureManifest Location="PDPplus Project Picker_Feature2\Feature.xml" />
+    <FeatureManifest Location="PDPplus Project Picker_Feature3\Feature.xml" />
+    <FeatureManifest Location="PDPplus Project Picker_Feature4\Feature.xml" />
+  </FeatureManifests>
+</Solution>

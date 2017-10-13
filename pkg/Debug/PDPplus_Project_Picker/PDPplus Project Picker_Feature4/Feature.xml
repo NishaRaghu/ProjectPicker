@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="14e2fbbf-57c8-469e-bf9b-25b9af3d054e" Scope="Web" Title="PDPplus Project Picker Feature4" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="ProjectChildList\Elements.xml" />
+    <ElementFile Location="ProjectChildList\Schema.xml" />
+    <ElementManifest Location="ProjectChildListInstance\Elements.xml" />
+    <ElementManifest Location="PID\Elements.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="ProjectChildList\Elements.xml" />
+        <ElementManifest Location="ProjectChildListInstance\Elements.xml" />
+        <ElementManifest Location="PID\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

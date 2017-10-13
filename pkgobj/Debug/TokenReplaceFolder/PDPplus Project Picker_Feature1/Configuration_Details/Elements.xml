@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01008F386FF8F2AA43AA9C0B3A2F963ECB3F" Name="Configuration_Details" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{566656F5-17B3-4291-98A5-5074AADF77B3}" DisplayName="$Resources:core,User_Field_1_OL;" Name="UserField1" Sealed="TRUE" />
+      <FieldRef ID="{2AEA194D-E399-4f05-95AF-94F87B1F2687}" DisplayName="$Resources:core,Assistants_Name_OL;" Name="AssistantsName" Sealed="TRUE" />
+      <FieldRef ID="{52578FC3-1F01-4f4d-B016-94CCBCF428CF}" DisplayName="$Resources:core,Comments;" Description="$Resources:core,_CommentsDesc;" Name="_Comments" Sealed="TRUE" ShowInFileDlg="FALSE" Sortable="FALSE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

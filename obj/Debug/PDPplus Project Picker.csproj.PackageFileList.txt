@@ -1,0 +1,1 @@
+bin\Debug\PDPplus_Project_Picker.wsp

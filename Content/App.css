@@ -1,0 +1,12 @@
+﻿/* Place custom styles below */
+#actions {
+    display: block;
+}
+#savecancel {
+    display: block;
+}
+
+#divbtn1 {
+    display: inline-block;
+    float: left;
+}

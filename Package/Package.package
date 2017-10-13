@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="3ae94178-bc91-495b-9d63-54e56ccc8993" solutionId="3ae94178-bc91-495b-9d63-54e56ccc8993" resetWebServer="false" sharePointProductVersion="16.0" name="PDPplus_Project_Picker" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="f33e51e3-21b7-41cd-a561-567f906e77b1" />
+    <featureReference itemId="c42f092d-8c42-431b-a4e9-42ad879206e5" />
+    <featureReference itemId="510669b6-4c49-4021-b4ea-4202ae3eded3" />
+    <featureReference itemId="a63324e4-3b36-4d14-a051-2bc830a661cc" />
+  </features>
+</package>
